@@ -1,0 +1,754 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-height: 100vh;
+    min-width:100vh;
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+        "cabecera"
+        "cabecera"
+        "principal"
+        "pie"
+    ;
+}
+/*
+html{
+    scroll-behavior: smooth;
+} se usa para hacer landingpage*/
+
+/*HEADER*/
+
+.header{
+    background-color: rgb(73, 73, 73);
+    position: sticky;
+    font-family: 'Rubik', sans-serif;
+    grid-area: cabecera;
+}
+
+.header__menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__menu li{
+    list-style:none;
+    padding: 3vh 5vh 2vh 3vh ;
+}
+
+.header__menu li a{
+    text-decoration: none;
+    color:white ;
+}
+
+.header__submenu{
+    display: none;
+    position: absolute; 
+    background-color: deeppink;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header__submenu li{
+    padding: 15px;
+}
+
+.header__menu--submenu{
+    position: relative;
+}
+
+.header__menu--submenu:hover .header__submenu{
+    display: block;
+}
+
+main{
+    padding-left: 20vh;
+    padding-top: 3%;
+}
+
+/*MAIN INDEX*/
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-image: url(img/bg-index-design.png);
+    background-size: cover;
+    height: 80vh;
+    width: auto;
+    grid-area: principal;
+    
+}
+
+.main__tituloindex{
+    font-size: 5vh;
+    padding-top: 8vh;
+    color:deeppink;
+    letter-spacing: normal;
+    font-family: 'Rubik', sans-serif;
+}
+
+.main__subtindex{
+    padding-top: 0%;
+    padding-bottom: 8%;
+    font-size: 3vh;
+    color:rgb(54, 54, 54);
+    letter-spacing: normal;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*MAIN ABOUT ME*/
+
+.main__aboutme{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+    grid-template-areas: 
+        "tituloabout tituloabout"
+        "texto foto"
+        "texto foto"
+        "boton boton"
+        "habilidades habilidades" 
+        "titulosk titulosk"   
+    ;
+}
+
+.about{
+    grid-area: tituloabout;
+    font-size: 2rem;
+    color:deeppink;
+    letter-spacing: normal;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    }
+
+.text__container {
+    width: 50vh;
+    margin-right: 1rem;
+    grid-area: texto;
+}
+
+.side__img__container {
+    width: 50vh;
+    grid-area: foto;
+    padding-top: 3vh;
+}
+
+.main__div2__img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.div__boton{
+    bottom: 10px;
+    width: 100%;
+    margin-top: 3rem;
+    grid-area: boton;
+
+}
+
+.button__{
+    background-color: deeppink;
+    width: 20vh;
+    height: 5vh;
+    border-radius: 15px;
+    color: white;
+}
+
+.skills{
+    grid-area: habilidades;
+}
+
+.container__skillsh1{
+    grid-area: titulosk;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.div__skills {
+   /* padding: 3vh 0 7vh 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 7rem ;
+    padding-bottom: 7rem;
+}
+
+.div__skills img{
+    width: 25vh;
+    height: 10vh;
+}
+
+/*USED FOR ALL*/
+.main__h1{
+    font-size: 2rem;
+    color:deeppink;
+    letter-spacing: normal;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+}
+
+
+.main__h2{
+    font-size: 1rem;
+    color:rgb(54, 54, 54);
+    letter-spacing: normal;
+    font-family: 'Rubik', sans-serif;
+}
+
+p{
+    letter-spacing: normal;
+    line-height: 2vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+}
+
+/*ESTUDIES*/
+.estudios__section{
+    margin-top: -100px;
+    padding-top: 150px;
+    padding-left: 1%;
+}
+
+li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: deeppink;
+    color: white;
+}
+
+/*EXPERIENCE*/
+.mainExperience{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /*grid-template-columns: 1fr 2fr;
+    grid-template-rows: 3fr 4fr ;
+    align-items: center;*/
+    grid-template-areas: 
+        "titulo"
+        "experiencia"
+    ; 
+}
+
+.expe {
+    grid-area: titulo;
+}
+
+.mainDivexpe{
+    grid-area: experiencia;
+}
+
+.container__experience{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 0fr;
+    gap: 3rem;
+    width: 100vh;
+    font-family: 'Rubik', sans-serif;
+}
+
+.bussines__container{
+    width: 20vh;
+    height: 15vh;
+    border-right: thick solid deeppink;
+}
+
+.bussines__container__charge{
+    width: 100% ;
+}
+
+/*EDUCATION*/
+
+.bussines__container__study{
+    height: auto;
+    width: 40vh;
+    padding-left: 7vh;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.bussines__container img{
+    width: 17vh;
+    margin-left: 17vh;
+}
+
+/*CONTACT*/
+
+.main__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.contact__container{
+    width: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    height: 465px;
+    margin: 50px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.contact-form:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+form {
+    padding: 25px 20px;
+}
+
+input {
+    width: 240px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(16, 62, 109, 0.4);
+}
+
+input:first-child {
+    margin: 15px 15px 15px 0;
+}
+
+textarea {
+    width: 500px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(16, 62, 109, 0.4);
+}
+
+address {
+    padding: 20px;
+    width: 260px;
+    background-color: deeppink;
+    color: #fff;
+    line-height: 50px;
+}
+
+form h2 {
+    font-size: 18px;
+}
+
+address p {
+    line-height: 35px;
+}
+
+.form-submit button {
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding: 8px 15px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.form-submit button:hover {
+    background: deeppink;
+}
+
+form ion-icon {
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+address ion-icon {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.social-icons ion-icon {
+    margin: 5px 10px;
+}
+
+
+.btn__contact {
+    width: 10vh;
+    height: 3vh;
+}
+
+button:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, rgb(50, 12, 20), rgb(100, 27, 19));
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color: black;
+    height: 10vh;
+    bottom: 0%;
+    margin-top: auto;
+}
+
+footer img {
+    width: 50px;
+    margin: 3vh 2vh;
+}
+
+.footer__list{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__list li{
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 500px){
+
+    body{
+        max-height: 100vh;
+        min-width:auto;
+        position: none;
+        display: grid;
+        grid-template-areas: 
+            "cabecera"
+            "cabecera"
+            "principal"
+            "pie"
+        ;
+    }
+
+    .header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-area: cabecera;
+    }
+    
+    .header__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 390px;
+    }
+    
+    .header__menu li{
+        list-style:none;
+        padding: 3vh 5vh 2vh 3vh ;
+    }
+    
+    .header__menu li a{
+        text-decoration: none;
+        color:white ;
+    }
+    
+    .header__submenu{
+        display: flex;
+        position: relative; 
+        background-color: deeppink;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    .header__submenu li{
+        padding: 5px;
+    }
+    
+    .header__menu--submenu{
+        position: relative;
+    }
+    
+    .header__menu--submenu:hover .header__submenu{
+        display: none;
+    }
+    
+    main{
+        padding-left: 0vh;
+        padding-top: 3%;
+        
+    }
+
+    /*index*/
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0;
+        background-image: url(img/bg-indsdfex-desigsdfsn.png);
+        background-size: none;
+        height: 80vh;
+        width: 10vh;
+        grid-area: principal;
+        
+    }
+    
+    .main__tituloindex{
+        font-size: 3vh;
+        padding-top: 8vh;
+        color:deeppink;
+        letter-spacing: normal;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    .main__subtindex{
+        padding-top: 0%;
+        padding-bottom: 8%;
+        font-size: 2vh;
+        color:rgb(54, 54, 54);
+        letter-spacing: normal;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    /*sobre mi*/
+    .main__aboutme{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding-left: 0%;
+        flex-direction: column;
+        justify-content: none;
+        align-content: start;
+        max-width: 390px;
+        margin-left: 5px;
+        grid-template-areas: 
+            "tituloabout"
+            "texto"
+            "foto"
+            "boton"
+            "habilidades" 
+            "titulosk"   
+        ;
+    }
+
+    .text__container {
+        width: 100%;
+        padding-right: 0;
+        padding-left:0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .about{
+        grid-area: tituloabout;
+        font-size: 2rem;
+        color:deeppink;
+        letter-spacing: normal;
+        font-family: 'Rubik', sans-serif;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .textArea{
+        grid-area: texto;
+        max-width: 100%;
+        padding-left: 5px;
+    }
+
+    p{
+        letter-spacing: normal;
+        line-height: 2vh;
+        padding: none;
+        font-family: 'Rubik', sans-serif;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+    }
+    
+    .side__img__container {
+        width: 390px;
+        padding-top: 2vh;
+        margin-left: -5px;
+        display: grid;
+        grid-template-columns: none;
+        grid-area: foto;
+    }
+    
+    .main__div2__img {
+        height: auto;
+        border-radius: none;
+    }
+
+    .div__boton{
+        bottom: 10px;
+        width: 100%;
+        margin-top: 3rem;
+        grid-area: boton;
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills{
+        grid-area: habilidades;
+        max-width: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 5vh;
+    }
+    
+    .container__skillsh1{
+        grid-area: titulosk;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        max-width: 90%;
+    }
+    
+    .div__skills {
+       /* padding: 3vh 0 7vh 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-bottom: 2vh;
+        max-width: 50%;
+    }
+
+    .div__skills img{
+        width: 20vh;
+        height: 10vh;
+    }
+
+/*experience*/
+
+.mainExperience{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /*grid-template-columns: 1fr 2fr;
+    grid-template-rows: 3fr 4fr ;
+    align-items: center;*/
+    grid-template-areas: 
+        "titulo"
+        "experiencia"
+    ; 
+    min-width: 390px;
+}
+
+.mainDivexpe{
+    grid-area: experiencia;
+    
+}
+.expe {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    padding-left: 3vh;
+
+}
+
+
+.container__experience{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 0fr;
+    gap: 1vh;
+    width:none;
+    min-width: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background-color: aqua;
+    grid-template-areas: 
+        "lugar"
+        "cargo"
+    ;
+}
+
+.bussines__container{
+    grid-area: lugar;
+    width: 80%;
+    height: 13vh;
+    background-color: deeppink;
+    color: #fff;
+    padding: 2vh 0vh 2vh 3vh;
+}
+
+.bussines__container p{
+    line-height: 4vh;
+}
+
+.bussines__container__charge{
+    grid-area: cargo;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    width: 100vh;
+    padding-bottom: 0vh;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+/*footer*/
+
+    footer{
+        background-color: black;
+        height: 12vh;
+        max-width: 100vh;
+        bottom: 0%;
+        margin-top: none;
+        padding-left: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-area: pie;
+    }
+
+    footer img {
+        width: 5vh;
+        margin: 2vh;
+    }
+    
+    .footer__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer__list a li{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__list li{
+        display: flex;
+        flex-direction: none;
+    }
+    
+}
