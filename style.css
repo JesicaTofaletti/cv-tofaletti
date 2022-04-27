@@ -225,14 +225,13 @@ p{
     grid-template-rows: 3fr 4fr ;
     align-items: center;*/
     grid-template-areas: 
-        "titulo"
-        "educacion"
-        "cursos"
-        "idiomas"
+        ". tituloedu ."
+        ". contenido ."
     ; 
 }
 
 .edu{
+    grid-area: tituloedu;
     font-size: 2rem;
     color:deeppink;
     letter-spacing: normal;
@@ -240,6 +239,7 @@ p{
 }
 
 .container__lenguage{
+    grid-area: contenido;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -418,7 +418,6 @@ address ion-icon {
     margin: 5px 10px;
 }
 
-
 .btn__contact {
     width: 10vh;
     height: 3vh;
@@ -428,7 +427,6 @@ button:hover {
     color: #fff;
     background-image: linear-gradient(to right, rgb(50, 12, 20), rgb(100, 27, 19));
 }
-
 
 /*FOOTER*/
 
@@ -599,8 +597,8 @@ footer img {
 
     p{
         letter-spacing: normal;
-        line-height: 2vh;
-        padding: none;
+        line-height: 1rem;
+        padding: 0;
         font-family: 'Rubik', sans-serif;
         text-align: justify;
         display: flex;
@@ -681,15 +679,13 @@ footer img {
     }
 
     .mainDivexpe{
-        grid-area: experiencia;
-        
+        grid-area: experiencia;  
     }
     .expe {
         grid-area: titulo;
         display: flex;
         justify-content: center;
         padding-left: 3vh;
-
     }
 
 
@@ -727,16 +723,79 @@ footer img {
         flex-direction: column;
         grid-template-columns: none;
         grid-template-rows: none;
-        width: 100vh;
+        width: 100%;
         padding-bottom: 0vh;
         background-color: red;
     }
 
-    /* ESTUDIOS */
+    /*ESTUDIES*/
 
+    .mainStudy{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        /*grid-template-columns: 1fr 2fr;
+        grid-template-rows: 3fr 4fr ;
+        align-items: center;*/
+        grid-template-areas: 
+            ". tituloedu ."
+            ". contenido ."
+        ; 
+    }
 
+    .edu{
+        grid-area: tituloedu;
+        font-size: 2rem;
+        color:deeppink;
+        letter-spacing: normal;
+        font-family: 'Rubik', sans-serif;
+        display: flex;
+        justify-content: center;
+    }
 
+    .container__lenguage{
+        grid-area: contenido;
+        display: grid;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 5vh;
+        padding-bottom: 3vh;
+        width: 100%;
+    }
 
+    .container__diplo{
+        height: 15vh;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+    }
+
+    .container__diplo img{
+        width: auto;
+        margin-left: 0vh;
+    }
+
+    .bussines__study{
+        height: 20vh;
+        width: none;
+        /* display: grid;
+        grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 5vh;
+    }
+
+    .bussines__study h3{
+        text-align: center;
+        background-color: deeppink;
+        color: #fff;
+        padding: 1vh;
+        margin-bottom: 2vh;
+    }
 
 
 /*footer*/
@@ -774,5 +833,5 @@ footer img {
         display: flex;
         flex-direction: none;
     }
-    
+ 
 }
