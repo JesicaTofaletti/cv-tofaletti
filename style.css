@@ -215,19 +215,59 @@ p{
 }
 
 /*ESTUDIES*/
-.estudios__section{
-    margin-top: -100px;
-    padding-top: 150px;
-    padding-left: 1%;
+
+.mainStudy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /*grid-template-columns: 1fr 2fr;
+    grid-template-rows: 3fr 4fr ;
+    align-items: center;*/
+    grid-template-areas: 
+        "titulo"
+        "educacion"
+        "cursos"
+        "idiomas"
+    ; 
 }
 
+.edu{
+    font-size: 2rem;
+    color:deeppink;
+    letter-spacing: normal;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container__lenguage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 7vh;
+}
+
+.container__diplo{
+    height: 20vh;
+    width: 30vh;
+}
+
+.container__diplo img{
+    width: 17vh;
+    margin-left: 5vh;
+}
+
+.bussines__study{
+    height: 20vh;
+    width: 40vh;
+}
+
+/* Change the link color on hover */
 li a {
     display: block;
     color: #000;
     text-decoration: none;
 }
 
-/* Change the link color on hover */
 li a:hover {
     background-color: deeppink;
     color: white;
@@ -272,22 +312,6 @@ li a:hover {
 
 .bussines__container__charge{
     width: 100% ;
-}
-
-/*EDUCATION*/
-
-.bussines__container__study{
-    height: auto;
-    width: 40vh;
-    padding-left: 7vh;
-    padding-bottom: 3rem;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-}
-
-.bussines__container img{
-    width: 17vh;
-    margin-left: 17vh;
 }
 
 /*CONTACT*/
@@ -411,7 +435,7 @@ button:hover {
 footer{
     background-color: black;
     height: 10vh;
-    bottom: 0%;
+    bottom: none;
     margin-top: auto;
 }
 
@@ -640,75 +664,75 @@ footer img {
         height: 10vh;
     }
 
-/*experience*/
+    /*experience*/
 
-.mainExperience{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    /*grid-template-columns: 1fr 2fr;
-    grid-template-rows: 3fr 4fr ;
-    align-items: center;*/
-    grid-template-areas: 
-        "titulo"
-        "experiencia"
-    ; 
-    min-width: 390px;
-}
+    .mainExperience{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        /*grid-template-columns: 1fr 2fr;
+        grid-template-rows: 3fr 4fr ;
+        align-items: center;*/
+        grid-template-areas: 
+            "titulo"
+            "experiencia"
+        ; 
+        min-width: 390px;
+    }
 
-.mainDivexpe{
-    grid-area: experiencia;
-    
-}
-.expe {
-    grid-area: titulo;
-    display: flex;
-    justify-content: center;
-    padding-left: 3vh;
+    .mainDivexpe{
+        grid-area: experiencia;
+        
+    }
+    .expe {
+        grid-area: titulo;
+        display: flex;
+        justify-content: center;
+        padding-left: 3vh;
 
-}
-
-
-.container__experience{
-    display: grid;
-    grid-template-columns: none;
-    grid-template-rows: 1fr 0fr;
-    gap: 1vh;
-    width:none;
-    min-width: 100vh;
-    font-family: 'Rubik', sans-serif;
-    background-color: aqua;
-    grid-template-areas: 
-        "lugar"
-        "cargo"
-    ;
-}
-
-.bussines__container{
-    grid-area: lugar;
-    width: 80%;
-    height: 13vh;
-    background-color: deeppink;
-    color: #fff;
-    padding: 2vh 0vh 2vh 3vh;
-}
-
-.bussines__container p{
-    line-height: 4vh;
-}
-
-.bussines__container__charge{
-    grid-area: cargo;
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: none;
-    grid-template-rows: none;
-    width: 100vh;
-    padding-bottom: 0vh;
-    background-color: red;
-}
+    }
 
 
+    .container__experience{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 0fr;
+        gap: 1vh;
+        width:none;
+        min-width: 100vh;
+        font-family: 'Rubik', sans-serif;
+        background-color: aqua;
+        grid-template-areas: 
+            "lugar"
+            "cargo"
+        ;
+    }
+
+    .bussines__container{
+        grid-area: lugar;
+        width: 80%;
+        height: 13vh;
+        background-color: deeppink;
+        color: #fff;
+        padding: 2vh 0vh 2vh 3vh;
+    }
+
+    .bussines__container p{
+        line-height: 4vh;
+    }
+
+    .bussines__container__charge{
+        grid-area: cargo;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        width: 100vh;
+        padding-bottom: 0vh;
+        background-color: red;
+    }
+
+    /* ESTUDIOS */
 
 
 
