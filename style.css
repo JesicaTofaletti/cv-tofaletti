@@ -15,10 +15,6 @@ body{
         "pie"
     ;
 }
-/*
-html{
-    scroll-behavior: smooth;
-} se usa para hacer landingpage*/
 
 /*HEADER*/
 
@@ -71,15 +67,14 @@ main{
 /*MAIN INDEX*/
 
 .main{
+    grid-area: principal;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     background-image: url(img/bg-index-design.png);
     background-size: cover;
     height: 80vh;
-    width: auto;
-    grid-area: principal;
-    
+    width: auto;   
 }
 
 .main__tituloindex{
