@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body{
+/* body{
     max-height: 100vh;
     min-width:100vh;
     position: relative;
@@ -14,18 +14,18 @@ body{
         "principal"
         "pie"
     ;
-}
+} */
 
-/*HEADER*/
 
-.header{
+/* header{
     background-color: rgb(73, 73, 73);
     position: sticky;
+    overflow:hidden;
     font-family: 'Rubik', sans-serif;
     grid-area: cabecera;
-}
+} */
 
-.header__menu{
+/* .header__menu{
     display: flex;
     justify-content: space-evenly;
 }
@@ -56,7 +56,7 @@ body{
 }
 
 .header__menu--submenu:hover .header__submenu{
-    display: block;
+    display: block; */
 }
 
 main{
@@ -197,6 +197,10 @@ main{
     color:rgb(54, 54, 54);
     letter-spacing: normal;
     font-family: 'Rubik', sans-serif;
+}
+
+h3{
+    text-align: center;
 }
 
 p{
@@ -423,7 +427,7 @@ button:hover {
     background-image: linear-gradient(to right, rgb(50, 12, 20), rgb(100, 27, 19));
 }
 
-/*FOOTER*/
+/* FOOTER
 
 footer{
     background-color: black;
@@ -444,12 +448,12 @@ footer img {
 
 .footer__list li{
     display: inline-block;
-}
+} */
 
 
 @media screen and (max-width: 500px){
 
-    body{
+    /* body{
         max-height: 100vh;
         min-width:auto;
         position: none;
@@ -460,9 +464,9 @@ footer img {
             "principal"
             "pie"
         ;
-    }
+    } */
 
-    .header{
+    /* .header{
         display: grid;
         grid-template-columns: 1fr;
         grid-area: cabecera;
@@ -502,7 +506,7 @@ footer img {
     
     .header__menu--submenu:hover .header__submenu{
         display: none;
-    }
+    } */
     
     main{
         padding-left: 0vh;
@@ -591,6 +595,13 @@ footer img {
         padding-left: 0px;
     }
 
+    h3{
+        
+        font-family: 'Rubik', sans-serif;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+    }
     p{
         letter-spacing: normal;
         line-height: 1rem;
@@ -794,7 +805,7 @@ footer img {
     }
 
 
-/*footer*/
+/* footer
 
     footer{
         background-color: black;
@@ -830,4 +841,4 @@ footer img {
         flex-direction: none;
     }
  
-}
+} */
