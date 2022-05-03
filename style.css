@@ -17,7 +17,7 @@
     text-align: start;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    padding-right: -20%;
+    padding-left: 10%;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -31,7 +31,7 @@
     font-weight: 400;
     font-display: swap;
     color: dimgrey;
-    margin-left: 20%;
+    padding-left: 10%;
 }
 
 @media screen and (max-width: 500px){
@@ -48,7 +48,7 @@
         text-align: center;
         padding-top: 2vh;
         padding-bottom: 2vh;
-        padding-right: -20%;
+        padding-left: none;
         font-family: 'Rubik';
         font-style: normal;
         font-weight: 400;
@@ -62,7 +62,7 @@
         font-weight: 400;
         font-display: swap;
         color: dimgrey;
-        margin-left: 5%;
+        padding-left: none;
         text-align: center;
     }
 
