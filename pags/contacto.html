@@ -22,7 +22,7 @@
     
       <title>cv-tofaletti</title>
   
-      <link rel="icon" type="image/logo-jt" href="./img/logo-jt.svg">
+      <link rel="icon" type="image/logo-jt" href="../img/logo-jt.svg">
       <!--HOJA DE ESTILOS-->
       <link rel="stylesheet" href="../style.css">
     </head>
@@ -63,91 +63,84 @@
         </nav>
       </header>
 
-    <main class="container accordion-body mb-5">
-      <h1 class="fs-1 text-center pt-5 text-danger">Contactame!</h1>
-      <div class="container">
+    <main class="container mb-5">
+      <h1 class="pt-5 text-center">Contactame!</h1>
+      
+      <div class="container mb-5 mt-5">
         <div class="row">
-          <div class="col-12 d-flex justify-content-center">
-            <div class="container mb-5 mt-5">
-              <div class="row">
-                <div class="col-12 bg-warning pt-5 pb-5 ps-5">
-                  <h3>En que puedo ayudarte?</h3>
-                  <p>
-                    <ion-icon name="pin"></ion-icon> Buenos Aires, Argentina.
-                    <br /><ion-icon name="logo-whatsapp"></ion-icon> (+549) 1137373737
-                    <br /><ion-icon name="mail"></ion-icon> dg.jesica@gmail.com
-                  </p>
-                  <hr />
-                
-                  <div class="social-icons">
-                    <ion-icon class="pe-2" name="logo-linkedin"></ion-icon> 
-                    <ion-icon class="pe-2" name="logo-behance"></ion-icon> /jesicatofaletti
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="container mt-5">
-              <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                  <form class="container">
-                    <div class="row">
-                      <div class="col-lg-6 col-sm-12 mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Name">
-                      </div>
-                      <div class="col-lg-6 col-sm-12 mb-3">
-                        <label for="apellido" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" placeholder="Last name">
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-lg-6 col-sm-12 mb-3">
-                        <label for="inputEmail3" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="yourmail@example.com">
-                      </div>
-
-                      <div class="col-lg-6 col-sm-12 mb-3">
-                        <label for="telephone" class="form-label">Teléfono</label>
-                        <input type="number" class="form-control" id="telephone" placeholder="011 57473727">
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-lg-6 col-sm-12 mt-2">
-                        <select class="form-select mt-4" aria-label="Default select example">
-                          <option selected>País | State</option>
-                          <option value="Argentina">Argentina</option>
-                          <option value="Chile">Chile</option>
-                          <option value="Colombia">Colombia</option>
-                          <option value="Espana">España</option>
-                          <option value="Uruguay">Uruguay</option>
-                          <option value="USA">USA</option>
-                        </select>
-                      </div>
-
-                      <div class="col-lg-6 col-sm-12 mb-3">
-                        <label for="formFileMultiple" class="form-label">Elegir archivos</label>
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
-                      </div>
-                    </div>
-
-                    <div class="form-submit mt-3">
-                      <div class="mb-3">
-                        <label for="mensajeconsulta" class="form-label">Consulta</label>
-                        <textarea class="form-control" id="mensajeconsulta" placeholder="Hello! Here you can write your message..." rows="3"></textarea>
-                      </div>
-
-                      <button class="btn btn-dark">Enviar</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+          <div class="col-12 pt-5 pb-5 ps-5 bg__contact">
+            <h3>En que puedo ayudarte?</h3>
+            <p>
+              <ion-icon name="pin"></ion-icon> Buenos Aires, Argentina.
+              <br /><ion-icon name="logo-whatsapp"></ion-icon> (+549) 1137373737
+              <br /><ion-icon name="mail"></ion-icon> dg.jesica@gmail.com
+            </p>
+            <hr />
+               
+            <div class="social-icons">
+              <ion-icon class="pe-2" name="logo-linkedin"></ion-icon> 
+              <ion-icon class="pe-2" name="logo-behance"></ion-icon> /jesicatofaletti
             </div>
           </div>
         </div>
       </div>
+
+
+      <form class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Name">
+          </div>
+
+          <div class="col-lg-6 col-sm-12 mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Last name">
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 mb-3 mb-3">
+            <label for="inputEmail3" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail3" placeholder="yourmail@example.com">
+          </div>
+
+          <div class="col-lg-6 col-sm-12 mb-3 mb-3">
+            <label for="telephone" class="form-label">Teléfono</label>
+              <input type="number" class="form-control" id="telephone" placeholder="011 57473727">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 mb-3 mt-2">
+            <select class="form-select mt-4" aria-label="Default select example">
+              <option selected>País | State</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Chile">Chile</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Espana">España</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="USA">USA</option>
+            </select>
+          </div>
+
+          <div class="col-lg-6 col-sm-12 mb-3 mb-3">
+            <label for="formFileMultiple" class="form-label">Elegir archivos</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+        </div>
+
+        <div class="form-submit mt-3">
+          <div class="mb-3">
+            <label for="mensajeconsulta" class="form-label">Consulta</label>
+            <textarea class="form-control" id="mensajeconsulta" placeholder="Hello! Here you can write your message..." rows="3"></textarea>
+          </div>
+
+          <button class="btn">Enviar</button>
+        </div>
+      </form>
+
+      
     </main>
 
     <footer class="mt-auto bg-dark text-center text-white">
@@ -155,11 +148,11 @@
           <div class="row pt-4 pb-4">
             <div class="col-12">
               <h3 class="text-light text-center">Dejame tu mail :)</h3>
-                <p class="text-light text-center">Si estas interesad@ en mi perfil dejame un mail de referencia para contactarme con vos.</p>
-                    <div class="" style="padding-bottom: 2%">
-                        <input type="text" placeholder="Enter your email address" style="padding: 1%; width: 15vw; height: 3vh;">
-                        <a href="" role="button" class="btn btn-dark border-light py-2" style="padding-right: 3%;padding-left: 3%;">Enviar</a>
-                    </div>
+              <p class="text-light text-center">Si estas interesad@ en mi perfil dejame un mail de referencia para contactarme con vos.</p>
+              <div class="newsletter__footer">
+                <input class="newsletter__email" type="text" placeholder="Enter your email address">
+                <a role="button" class="btn">Enviar</a>
+              </div>
             </div>
           </div>
           <div class="row justify-content-center pb-4">
